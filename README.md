@@ -6,10 +6,8 @@
 
   <br/><br/>
 
-  <p>
-    <a href="https://t.me/cloxoff">
-      <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white" alt="Telegram" />
-    </a>
-  </p>
+  <a href="https://t.me/cloxoff" target="_blank">
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="36" height="36" alt="Telegram" />
+  </a>
 
 </div>
