@@ -7,7 +7,7 @@
   <br/><br/>
 
   <a href="https://t.me/твой_юзернейм" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=130&section=header&animation=waving" width="85%" alt="Telegram" />
+    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=12,20,24&height=120&section=header&animation=twinkling" width="85%" alt="Telegram" />
   </a>
 
 </div>
