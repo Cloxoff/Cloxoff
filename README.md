@@ -6,8 +6,8 @@
 
   <br/><br/>
 
-  <a href="https://t.me/твой_юзернейм" target="_blank">
-    <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=12,20,24&height=120&section=header&animation=twinkling" width="85%" alt="Telegram" />
+  <a href="https://t.me/cloxoff" target="_blank">
+    <img src="https://i.pinimg.com/originals/91/9f/8e/919f8e028b031317586f3b0696e57c6b.gif" width="75%" style="border-radius: 12px;" alt="Telegram" />
   </a>
 
 </div>
