@@ -7,7 +7,7 @@
   <br/><br/>
 
   <a href="https://t.me/cloxoff" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/telegram/default.svg" width="36" height="36" alt="Telegram" />
+    <img src="https://media.giphy.com/media/USy5yxBQaV3V4wE5bZ/giphy.gif" width="48" height="48" alt="Telegram Animation" />
   </a>
 
 </div>
