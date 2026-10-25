@@ -1,13 +1,23 @@
 <div align="center">
 
-  <!-- Карточка проекта iME Weather -->
-  <a href="https://github.com/Cloxoff/iME-Weather">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Cloxoff&repo=iME-Weather&theme=radical&border_color=7952b3&bg_color=0d1117&title_color=bb86fc&icon_color=bb86fc" alt="iME Weather" />
-  </a>
+  <!-- Компактная карточка проекта с маскотом в одну строку -->
+  <table>
+    <tr>
+      <td align="center" style="border: none; background: transparent;">
+        <a href="https://github.com/Cloxoff/iME-Weather">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=Cloxoff&repo=iME-Weather&theme=tokyonight&border_color=533483&bg_color=0f0e17&title_color=a78bfa&icon_color=a78bfa" alt="iME Weather" />
+        </a>
+      </td>
+      <td align="center" style="border: none; background: transparent;">
+        <!-- Тот самый маскот Boykisser в компактном размере -->
+        <img src="https://media.tenor.com/WbC-cM8Wn7UAAAAi/boykisser.gif" width="105px" alt="Mascot" />
+      </td>
+    </tr>
+  </table>
 
-  <br/><br/>
+  <br/>
 
-  <!-- Стильная фиолетовая анимация (анимированная SVG-волна) -->
-  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=12,20,24&height=140&section=header" width="100%" />
+  <!-- Компактная темная анимация змейки по коммитам (в точности как у него) -->
+  <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-contribution-grid-snake-dark.svg" width="90%" alt="Snake animation" />
 
 </div>
