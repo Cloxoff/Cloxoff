@@ -1,16 +1,18 @@
-## Hi there 👋
+<div align="center">
 
-<!--
-**Cloxoff/Cloxoff** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+  <!-- Карточка твоего главного проекта iME Weather -->
+  <a href="https://github.com/Cloxoff/iME-Weather">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Cloxoff&repo=iME-Weather&theme=radical&border_color=7952b3&bg_color=0d1117&title_color=bb86fc&icon_color=bb86fc" alt="iME Weather" />
+  </a>
 
-Here are some ideas to get you started:
+  <br/><br/>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <!-- Статистика GitHub в фиолетовых тонах -->
+  <img src="https://github-readme-stats.vercel.app/api?username=Cloxoff&show_icons=true&theme=radical&hide_border=false&border_color=7952b3&bg_color=0d1117&title_color=bb86fc&icon_color=bb86fc&text_color=c9d1d9" alt="Cloxoff GitHub Stats" />
+
+  <br/><br/>
+
+  <!-- Полоска используемых языков программирования -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Cloxoff&layout=compact&theme=radical&border_color=7952b3&bg_color=0d1117&title_color=bb86fc" alt="Top Languages" />
+
+</div>
