@@ -8,6 +8,6 @@
   <br/><br/>
 
   <!-- Стильная фиолетовая анимация (анимированная SVG-волна) -->
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24&height=180&section=header&animation=twinkling" width="100%" alt="Wave Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=12,20,24&height=140&section=header" width="100%" />
 
 </div>
