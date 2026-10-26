@@ -1,30 +1,7 @@
-<svg width="650" height="110" viewBox="0 0 650 110" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#020617" />
-    </linearGradient>
-  </defs>
+<div align="center">
 
-  <!-- Закругленная компактная карточка -->
-  <rect x="1" y="1" width="648" height="108" rx="20" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+  <a href="https://github.com/Cloxoff/iME-Weather">
+    <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/main/banner.svg" alt="iME-Weather" width="100%" />
+  </a>
 
-  <!-- Иконка слева -->
-  <g transform="translate(35, 30)">
-    <rect width="50" height="50" rx="14" fill="#1e293b" fill-opacity="0.6" />
-    <path d="M18 31a7 7 0 0 1-1.5-13.8A10 10 0 0 1 34 14a8 8 0 0 1 6.8 11.2A6 6 0 0 1 38 31H18z" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round" />
-    <path d="M26 31l-3 7h5l-2 7 7-9h-5l3-5h-5z" fill="#38bdf8" />
-  </g>
-
-  <!-- Текст по центру -->
-  <text x="105" y="48" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="700" font-size="20" fill="#f8fafc">iME-Weather</text>
-  <text x="105" y="70" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="400" font-size="13" fill="#94a3b8">Modern weather tracking client for Turkmenistan</text>
-  <text x="105" y="88" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="500" font-size="11" fill="#38bdf8">github.com/Cloxoff/iME-Weather</text>
-
-  <!-- Правая часть: статус -->
-  <g transform="translate(530, 42)">
-    <rect width="85" height="26" rx="8" fill="#1e293b" />
-    <circle cx="15" cy="13" r="4" fill="#38bdf8" />
-    <text x="26" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">v1.1.0</text>
-  </g>
-</svg>
+</div>
