@@ -47,8 +47,7 @@
 
   <br>
 
-  <!-- Статистика GitHub (в прозрачно-неоновом стиле) -->
-  <h2>📊 Cloxoff's Stats</h2>
+  
 
   <img src="https://streak-stats.demolab.com?user=Cloxoff&theme=tokyonight&hide_border=true&background=0D1117&ring=00E5FF&fire=3B82F6&currStreakLabel=00E5FF" width="48%" />
   <img src="https://github-readme-stats.vercel.app/api?username=Cloxoff&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00E5FF&icon_color=3B82F6&text_color=FFFFFF" width="48%" />
