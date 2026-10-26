@@ -1,30 +1,42 @@
-<svg width="650" height="110" viewBox="0 0 650 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="680" height="115" viewBox="0 0 680 115" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0f172a" />
-      <stop offset="100%" stop-color="#0b0f19" />
+    <linearGradient id="purpleBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#190d2e" />
+      <stop offset="60%" stop-color="#0f071d" />
+      <stop offset="100%" stop-color="#07020e" />
     </linearGradient>
+
+    <radialGradient id="purpleGlow" cx="90%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
   </defs>
 
-  <!-- Закругленная карточка с прозрачными углами -->
-  <rect x="1" y="1" width="648" height="108" rx="16" fill="url(#cardBg)" stroke="#1e293b" stroke-width="1.5" />
+  <!-- Карточка -->
+  <rect x="1.5" y="1.5" width="677" height="112" rx="20" fill="url(#purpleBg)" stroke="#3b1d60" stroke-width="1.5" />
+  <rect x="1.5" y="1.5" width="677" height="112" rx="20" fill="url(#purpleGlow)" />
 
-  <!-- Иконка слева -->
+  <!-- Иконка приложения слева -->
   <g transform="translate(32, 28)">
-    <rect width="54" height="54" rx="14" fill="#1e293b" fill-opacity="0.7" />
-    <path d="M20 33a7 7 0 0 1-1.5-13.8A10 10 0 0 1 36 16a8 8 0 0 1 6.8 11.2A6 6 0 0 1 40 33H20z" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linejoin="round" />
-    <path d="M28 33l-3 7h5l-2 7 7-9h-5l3-5h-5z" fill="#38bdf8" />
+    <rect width="58" height="58" rx="16" fill="#c084fc" fill-opacity="0.12" stroke="#c084fc" stroke-width="1.5" stroke-opacity="0.35" />
+    <path d="M20 35a7 7 0 0 1-1.5-13.8A10 10 0 0 1 36 18a8 8 0 0 1 6.8 11.2A6 6 0 0 1 40 35H20z" fill="none" stroke="#e9d5ff" stroke-width="2.2" stroke-linejoin="round" />
+    <path d="M28 35l-3 7h5l-2 7 7-9h-5l3-5h-5z" fill="#c084fc" />
   </g>
 
-  <!-- Текст по центру -->
-  <text x="105" y="48" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="700" font-size="20" fill="#f8fafc">iME-Weather</text>
-  <text x="105" y="70" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="400" font-size="13" fill="#94a3b8">Modern weather tracking client for Turkmenistan</text>
-  <text x="105" y="88" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="500" font-size="12" fill="#38bdf8">github.com/Cloxoff/iME-Weather</text>
+  <!-- Инфо по центру -->
+  <g transform="translate(110, 36)">
+    <text x="0" y="20" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="800" font-size="22" fill="#ffffff">iME-Weather</text>
+    <text x="0" y="42" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="400" font-size="13" fill="#cbd5e1">Cross platform weather tracking client with Material 3 UI</text>
+    <g transform="translate(0, 54)">
+      <circle cx="4" cy="5" r="3" fill="#c084fc" />
+      <text x="14" y="9" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="500" font-size="12" fill="#d8b4fe">github.com/Cloxoff/iME-Weather</text>
+    </g>
+  </g>
 
   <!-- Версия справа -->
-  <g transform="translate(530, 42)">
-    <rect width="85" height="26" rx="8" fill="#1e293b" />
-    <circle cx="15" cy="13" r="4" fill="#38bdf8" />
-    <text x="26" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">v1.1.0</text>
+  <g transform="translate(565, 44)">
+    <rect width="82" height="26" rx="8" fill="#2e1065" stroke="#7e22ce" stroke-width="1" />
+    <circle cx="14" cy="13" r="3.5" fill="#c084fc" />
+    <text x="25" y="17" font-family="-apple-system, sans-serif" font-size="11" font-weight="700" fill="#f3e8ff">v1.1.0</text>
   </g>
 </svg>
