@@ -1,0 +1,34 @@
+<svg width="840" height="90" viewBox="0 0 840 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barBg" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#120822" />
+      <stop offset="50%" stop-color="#190b2e" />
+      <stop offset="100%" stop-color="#120822" />
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="838" height="88" rx="18" fill="url(#barBg)" stroke="#2e1065" stroke-width="1.5" />
+
+  <text x="32" y="38" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, sans-serif" font-weight="800" font-size="13" fill="#ffffff" letter-spacing="1.5">TECH STACK</text>
+  <text x="32" y="58" font-family="monospace" font-size="11" fill="#a855f7">CORE TOOLS & SDK</text>
+
+  <line x1="185" y1="20" x2="185" y2="70" stroke="#2e1065" stroke-width="1.5" />
+
+  <!-- Плитки технологий -->
+  <g transform="translate(210, 24)">
+    <rect x="0" y="0" width="110" height="42" rx="10" fill="#1e1035" stroke="#4c1d95" stroke-width="1" />
+    <text x="55" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#e9d5ff">Android SDK</text>
+
+    <rect x="122" y="0" width="115" height="42" rx="10" fill="#1e1035" stroke="#4c1d95" stroke-width="1" />
+    <text x="179" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#e9d5ff">Material 3 UI</text>
+
+    <rect x="249" y="0" width="115" height="42" rx="10" fill="#1e1035" stroke="#4c1d95" stroke-width="1" />
+    <text x="306" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#c084fc">Weather API</text>
+
+    <rect x="376" y="0" width="105" height="42" rx="10" fill="#1e1035" stroke="#4c1d95" stroke-width="1" />
+    <text x="428" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#e9d5ff">Clean Arch</text>
+
+    <rect x="493" y="0" width="105" height="42" rx="10" fill="#1e1035" stroke="#4c1d95" stroke-width="1" />
+    <text x="545" y="26" text-anchor="middle" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" fill="#c084fc">Git / Linux</text>
+  </g>
+</svg>
