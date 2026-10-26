@@ -1,0 +1,126 @@
+<svg width="800" height="260" viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Эффект свечения -->
+    <filter id="neon-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#2563eb" />
+    </linearGradient>
+
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#00e5ff" fill-opacity="0.08" />
+    </pattern>
+
+    <style>
+      @keyframes floatCloud {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes flash {
+        0%, 88%, 93%, 97%, 100% { opacity: 0.15; filter: none; }
+        90%, 95% { opacity: 1; filter: drop-shadow(0 0 16px #00e5ff); }
+      }
+      @keyframes rainfall {
+        0% { transform: translateY(-15px); opacity: 0; }
+        40% { opacity: 0.9; }
+        100% { transform: translateY(30px); opacity: 0; }
+      }
+      @keyframes scan {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(260px); }
+      }
+
+      .cloud-group { animation: floatCloud 4.5s ease-in-out infinite; }
+      .bolt { animation: flash 3.5s infinite; }
+      .rain { stroke: #00e5ff; stroke-width: 2.5; stroke-linecap: round; animation: rainfall 1.2s linear infinite; }
+      .r1 { animation-delay: 0s; }
+      .r2 { animation-delay: 0.25s; }
+      .r3 { animation-delay: 0.5s; }
+      .r4 { animation-delay: 0.75s; }
+      .r5 { animation-delay: 0.35s; }
+
+      .brand { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-weight: 900; font-size: 42px; fill: #ffffff; letter-spacing: -0.5px; }
+      .tag { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 1.5px; }
+      .text-desc { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, sans-serif; font-size: 14px; fill: #94a3b8; }
+    </style>
+  </defs>
+
+  <!-- Карточка фона -->
+  <rect x="1" y="1" width="798" height="258" rx="18" fill="#0d1117" stroke="#1e293b" stroke-width="2" />
+  <rect x="0" y="0" width="800" height="260" rx="18" fill="url(#dotGrid)" />
+
+  <!-- Сканирующая полоса -->
+  <line x1="10" y1="0" x2="790" y2="0" stroke="rgba(0, 229, 255, 0.15)" stroke-width="2" style="animation: scan 4s linear infinite;" />
+
+  <!-- ЛЕВАЯ ЧАСТЬ: Иконка погоды -->
+  <g transform="translate(45, 10)">
+    <!-- Дождь -->
+    <g class="cloud-group">
+      <line class="rain r1" x1="120" y1="165" x2="112" y2="185" />
+      <line class="rain r2" x1="145" y1="165" x2="137" y2="185" />
+      <line class="rain r3" x1="170" y1="165" x2="162" y2="185" />
+      <line class="rain r4" x1="195" y1="165" x2="187" y2="185" />
+      <line class="rain r5" x1="220" y1="165" x2="212" y2="185" />
+    </g>
+
+    <!-- Идеальная форма облака -->
+    <g class="cloud-group">
+      <path d="M 125 155 
+               C 100 155 85 138 85 118 
+               C 85 98 102 82 124 82 
+               C 129 62 148 45 172 45 
+               C 200 45 220 65 224 90 
+               C 230 87 237 85 244 85 
+               C 264 85 280 101 280 120 
+               C 280 140 264 155 244 155 Z" fill="#091322" stroke="url(#cyberGrad)" stroke-width="4.5" filter="url(#neon-glow)" />
+
+      <!-- Молния -->
+      <path class="bolt" d="M 185 88 
+               L 155 135 
+               L 180 135 
+               L 160 178 
+               L 205 125 
+               L 180 125 Z" fill="#00e5ff" stroke="#00e5ff" stroke-width="1.5" stroke-linejoin="round" />
+    </g>
+  </g>
+
+  <!-- ВЕРТИКАЛЬНЫЙ РАЗДЕЛИТЕЛЬ -->
+  <line x1="330" y1="45" x2="330" y2="215" stroke="#1e293b" stroke-width="2" stroke-dasharray="4 4" />
+
+  <!-- ПРАВАЯ ЧАСТЬ: UI & Инфо -->
+  <g transform="translate(365, 55)">
+    <!-- Бейджи статуса -->
+    <rect x="0" y="0" width="62" height="22" rx="6" fill="rgba(0, 229, 255, 0.1)" stroke="#00e5ff" stroke-width="1" />
+    <text class="tag" x="12" y="15" fill="#00e5ff">ONLINE</text>
+
+    <rect x="72" y="0" width="76" height="22" rx="6" fill="#1e293b" />
+    <text class="tag" x="84" y="15" fill="#94a3b8">ANDROID</text>
+
+    <text class="brand" x="0" y="65">iME-Weather<tspan fill="#00e5ff">.</tspan></text>
+    
+    <text class="text-desc" x="0" y="98">Цифровой трекер прогноза погоды в Туркменистане.</text>
+    <text class="text-desc" x="0" y="120" fill="#64748b">Реал-тайм обновление, радар осадков и легкий интерфейс.</text>
+
+    <!-- Нижняя полоска с характеристиками -->
+    <g transform="translate(0, 142)">
+      <circle cx="5" cy="5" r="4" fill="#00e5ff" />
+      <text font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1" x="16" y="9">Cross-Platform</text>
+
+      <circle cx="130" cy="5" r="4" fill="#3b82f6" />
+      <text font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1" x="141" y="9">Clean Architecture</text>
+    </g>
+  </g>
+
+  <!-- Кибер-уголки -->
+  <path d="M 6 22 L 6 6 L 22 6" fill="none" stroke="#00e5ff" stroke-width="2.5" />
+  <path d="M 794 22 L 794 6 L 778 6" fill="none" stroke="#00e5ff" stroke-width="2.5" />
+  <path d="M 6 238 L 6 254 L 22 254" fill="none" stroke="#00e5ff" stroke-width="2.5" />
+  <path d="M 794 238 L 794 254 L 778 254" fill="none" stroke="#00e5ff" stroke-width="2.5" />
+</svg>
