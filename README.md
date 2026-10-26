@@ -58,7 +58,11 @@
   <!-- Анимированный график коммитов -->
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Cloxoff&bg_color=0d1117&color=00e5ff&line=3b82f6&point=ffffff&area=true&hide_border=true&custom_title=Contribution%20Activity" width="95%" />
 
-  <!-- Сюда можно будет вставить Pac-Man или Змейку (см. Шаг 2) -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-snake-dark.svg?v=2" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-snake-dark.svg?v=2" />
+    <img alt="Snake" src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-snake-dark.svg?v=2" width="100%" />
+  </picture>
 
   <!-- Анимированная волна внизу -->
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f24,50:1e3a8a,100:00e5ff&height=110&section=footer" width="100%" />
