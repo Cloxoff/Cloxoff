@@ -15,23 +15,12 @@
       <stop offset="0%" stop-color="#a855f7" stop-opacity="0.18" />
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
     </radialGradient>
-
-    <style>
-      @keyframes ping {
-        0%, 100% { opacity: 1; transform: scale(1); }
-        50% { opacity: 0.35; transform: scale(0.85); }
-      }
-      .status-dot {
-        transform-origin: 154px 34px;
-        animation: ping 2.2s ease-in-out infinite;
-      }
-    </style>
   </defs>
 
   <rect x="1" y="1" width="798" height="168" rx="20" fill="url(#cardBg)" stroke="#271442" stroke-width="1.5" />
   <rect x="1" y="1" width="798" height="168" rx="20" fill="url(#softBloom)" />
 
-  <!-- ЛЕВАЯ ИКОНКА -->
+  <!-- Левая иконка -->
   <g transform="translate(32, 34)">
     <rect width="102" height="102" rx="26" fill="#130924" stroke="#3b1d60" stroke-width="1.5" />
     <rect x="6" y="6" width="90" height="90" rx="20" fill="#1b0e33" fill-opacity="0.5" />
@@ -39,9 +28,9 @@
     <path d="M48 58l-5.5 13h9l-4 13 13-16.5h-9.5l5.5-9.5h-8.5z" fill="url(#accentGrad)" />
   </g>
 
-  <!-- ЦЕНТРАЛЬНЫЙ БЛОК -->
+  <!-- Центральная информация -->
   <g transform="translate(154, 28)">
-    <circle class="status-dot" cx="0" cy="6" r="3.5" fill="#10b981" />
+    <circle cx="0" cy="6" r="3.5" fill="#10b981" />
     <text x="12" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="700" fill="#10b981" letter-spacing="1.5px">SYSTEM ONLINE</text>
     <text x="135" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748b">|</text>
     <text x="148" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="600" fill="#a855f7" letter-spacing="0.5px">v1.2.0 STABLE</text>
@@ -61,7 +50,7 @@
     </g>
   </g>
 
-  <!-- ПАНЕЛЬ ТЕЛЕМЕТРИИ СПРАВА -->
+  <!-- Панель телеметрии справа -->
   <g transform="translate(566, 30)">
     <rect width="202" height="110" rx="14" fill="#0d061a" stroke="#2a1447" stroke-width="1" />
     <path d="M 0 14 C 0 6.268 6.268 0 14 0 L 188 0 C 195.732 0 202 6.268 202 14 L 202 28 L 0 28 Z" fill="#160a2c" />
