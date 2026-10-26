@@ -63,7 +63,7 @@
       <text x="0" y="0" font-family="monospace" font-size="11" fill="#64748b">REGIONS</text>
       <text x="174" y="0" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#e2e8f0">5 / 5 ACTIVE</text>
       <text x="0" y="22" font-family="monospace" font-size="11" fill="#64748b">NETWORK</text>
-      <text x="174" y="22" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#38bdf8">< 38ms</text>
+      <text x="174" y="22" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#38bdf8">~38ms</text>
       <text x="0" y="44" font-family="monospace" font-size="11" fill="#64748b">RADAR</text>
       <text x="174" y="44" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#10b981">SYNCED</text>
     </g>
