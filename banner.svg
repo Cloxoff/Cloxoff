@@ -1,85 +1,104 @@
-<svg width="850" height="170" viewBox="0 0 850 170" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="800" height="170" viewBox="0 0 800 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Глубокий ночной фон -->
-    <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#140827" />
-      <stop offset="50%" stop-color="#0a0314" />
-      <stop offset="100%" stop-color="#05010a" />
+    <!-- Премиальный глубокий фон с переходом от ночного индиго к фиолетовому -->
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c0717" />
+      <stop offset="60%" stop-color="#07030e" />
+      <stop offset="100%" stop-color="#040108" />
     </linearGradient>
 
-    <!-- Неоновое фиолетовое свечение -->
-    <radialGradient id="neonGlow" cx="80%" cy="50%" r="60%">
-      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+    <!-- Градиент фирменного акцента (Cyan -> Purple) -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Мягкий блум-ореол по центру справа -->
+    <radialGradient id="softBloom" cx="80%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.18" />
       <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
     </radialGradient>
 
-    <!-- Сетка -->
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#7e22ce" stroke-opacity="0.12" stroke-width="1" />
-    </pattern>
-
+    <!-- Пульсация индикатора системы -->
     <style>
-      @keyframes scan {
-        0% { transform: translateY(-170px); }
-        100% { transform: translateY(170px); }
+      @keyframes ping {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50% { opacity: 0.35; transform: scale(0.85); }
       }
-      @keyframes glowPulse {
-        0%, 100% { filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.4)); }
-        50% { filter: drop-shadow(0 0 16px rgba(192, 132, 252, 0.9)); }
+      .status-dot {
+        transform-origin: 154px 34px;
+        animation: ping 2.2s ease-in-out infinite;
       }
-      @keyframes eq {
-        0%, 100% { height: 10px; }
-        50% { height: 36px; }
-      }
-      .scanner { animation: scan 4s linear infinite; }
-      .brand-title { animation: glowPulse 3s ease-in-out infinite; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-weight: 900; letter-spacing: 4px; }
-      .bar { transform-box: fill-box; transform-origin: bottom; animation: eq 1.2s ease-in-out infinite alternate; }
-      .b1 { animation-delay: 0.1s; }
-      .b2 { animation-delay: 0.4s; }
-      .b3 { animation-delay: 0.2s; }
-      .b4 { animation-delay: 0.6s; }
-      .b5 { animation-delay: 0.3s; }
     </style>
   </defs>
 
-  <!-- Карточка -->
-  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#cyberBg)" stroke="#3b1d60" stroke-width="1.5" />
-  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#grid)" />
-  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#neonGlow)" />
+  <!-- Карточка контейнера -->
+  <rect x="1" y="1" width="798" height="168" rx="20" fill="url(#cardBg)" stroke="#271442" stroke-width="1.5" />
+  <rect x="1" y="1" width="798" height="168" rx="20" fill="url(#softBloom)" />
 
-  <!-- Сканирующая кибер-линия -->
-  <line class="scanner" x1="2" y1="0" x2="848" y2="0" stroke="#c084fc" stroke-opacity="0.3" stroke-width="2" />
-
-  <!-- ЛЕВАЯ ЧАСТЬ: Иконка терминала iME -->
-  <g transform="translate(40, 42)">
-    <rect width="86" height="86" rx="18" fill="#2e1065" fill-opacity="0.25" stroke="#7e22ce" stroke-width="1.5" />
-    <path d="M26 32a6.5 6.5 0 0 1-1.4-12.8A9.5 9.5 0 0 1 40 17a7.5 7.5 0 0 1 6.5 10.5A5.5 5.5 0 0 1 44 32H26z" fill="none" stroke="#e9d5ff" stroke-width="2" stroke-linejoin="round" />
-    <path d="M33 32l-3 6h5l-2 6 7-8h-5l3-4h-5z" fill="#c084fc" />
-    <text x="43" y="68" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#a855f7">iME // OS</text>
+  <!-- ЛЕВАЯ ЧАСТЬ: Фирменный значок iME (Стеклянный Squircle) -->
+  <g transform="translate(32, 34)">
+    <rect width="102" height="102" rx="26" fill="#130924" stroke="#3b1d60" stroke-width="1.5" />
+    <rect x="6" y="6" width="90" height="90" rx="20" fill="#1b0e33" fill-opacity="0.5" />
+    
+    <!-- Векторный метео-символ -->
+    <path d="M34 58a12 12 0 0 1-2.5-23.7A17 17 0 0 1 59 29a13 13 0 0 1 11.5 19A10.5 10.5 0 0 1 66 58H34z" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-linejoin="round" />
+    <path d="M48 58l-5.5 13h9l-4 13 13-16.5h-9.5l5.5-9.5h-8.5z" fill="url(#accentGrad)" />
   </g>
 
-  <!-- ЦЕНТР: Ник и статус -->
-  <g transform="translate(155, 46)">
-    <text class="brand-title" x="0" y="32" font-size="34" fill="#ffffff">CLOXOFF</text>
-    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">iME-Weather Developer · Mobile & Cyber UI</text>
-    <g transform="translate(0, 72)">
-      <circle cx="4" cy="5" r="3" fill="#34d399" />
-      <text x="14" y="9" font-family="monospace" font-size="11" fill="#94a3b8">github.com/Cloxoff/iME-Weather</text>
+  <!-- ЦЕНТРАЛЬНАЯ ЧАСТЬ: Заголовок, описание и теги архитектуры -->
+  <g transform="translate(154, 28)">
+    <!-- Верхняя статусная строчка -->
+    <g transform="translate(0, 0)">
+      <circle class="status-dot" cx="0" cy="6" r="3.5" fill="#10b981" />
+      <text x="12" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="700" fill="#10b981" letter-spacing="1.5px">SYSTEM ONLINE</text>
+      <text x="135" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="500" fill="#64748b">|</text>
+      <text x="148" y="10" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="11" font-weight="600" fill="#a855f7" letter-spacing="0.5px">v1.2.0 STABLE</text>
+    </g>
+
+    <!-- Основное название проекта -->
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="900" font-size="28" fill="#ffffff" letter-spacing="-0.5px">iME-Weather</text>
+
+    <!-- Лаконичное позиционирование -->
+    <text x="0" y="68" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="400" font-size="13.5" fill="#94a3b8">Real-time meteorological engine & mobile client for Turkmenistan</text>
+
+    <!-- Стек технологий (Tech Badges) -->
+    <g transform="translate(0, 86)">
+      <!-- Badge 1: Android -->
+      <rect x="0" y="0" width="70" height="22" rx="6" fill="#160c29" stroke="#311752" stroke-width="1" />
+      <text x="35" y="15" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#cbd5e1">Android</text>
+
+      <!-- Badge 2: Material 3 -->
+      <rect x="78" y="0" width="82" height="22" rx="6" fill="#160c29" stroke="#311752" stroke-width="1" />
+      <text x="119" y="15" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#cbd5e1">Material 3</text>
+
+      <!-- Badge 3: Clean Arch -->
+      <rect x="168" y="0" width="88" height="22" rx="6" fill="#160c29" stroke="#311752" stroke-width="1" />
+      <text x="212" y="15" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10.5" font-weight="600" fill="#c084fc">Clean Arch</text>
     </g>
   </g>
 
-  <!-- СПРАВА: Анимированная активность -->
-  <g transform="translate(720, 75)">
-    <rect class="bar b1" x="0" y="0" width="6" height="20" rx="3" fill="#c084fc" />
-    <rect class="bar b2" x="14" y="0" width="6" height="34" rx="3" fill="#a855f7" />
-    <rect class="bar b3" x="28" y="0" width="6" height="16" rx="3" fill="#7e22ce" />
-    <rect class="bar b4" x="42" y="0" width="6" height="28" rx="3" fill="#c084fc" />
-    <rect class="bar b5" x="56" y="0" width="6" height="12" rx="3" fill="#a855f7" />
-  </g>
+  <!-- ПРАВАЯ ЧАСТЬ: Блок системной телеметрии (Data Terminal) -->
+  <g transform="translate(566, 30)">
+    <rect width="202" height="110" rx="14" fill="#0d061a" stroke="#2a1447" stroke-width="1" />
+    
+    <!-- Шапка панели -->
+    <path d="M 0 14 C 0 6.268 6.268 0 14 0 L 188 0 C 195.732 0 202 6.268 202 14 L 202 28 L 0 28 Z" fill="#160a2c" />
+    <circle cx="16" cy="14" r="3.5" fill="#ef4444" fill-opacity="0.8" />
+    <circle cx="28" cy="14" r="3.5" fill="#eab308" fill-opacity="0.8" />
+    <circle cx="40" cy="14" r="3.5" fill="#10b981" fill-opacity="0.8" />
+    <text x="186" y="18" text-anchor="end" font-family="monospace" font-size="9.5" font-weight="700" fill="#a855f7">METRIC_OS</text>
 
-  <!-- Угловые рамки -->
-  <path d="M 14,26 L 14,14 L 26,14" fill="none" stroke="#a855f7" stroke-width="2.5" />
-  <path d="M 836,26 L 836,14 L 824,14" fill="none" stroke="#a855f7" stroke-width="2.5" />
-  <path d="M 14,144 L 14,156 L 26,156" fill="none" stroke="#a855f7" stroke-width="2.5" />
-  <path d="M 836,144 L 836,156 L 824,156" fill="none" stroke="#a855f7" stroke-width="2.5" />
+    <!-- Строки телеметрии -->
+    <g transform="translate(14, 48)">
+      <text x="0" y="0" font-family="monospace" font-size="11" fill="#64748b">REGIONS</text>
+      <text x="174" y="0" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#e2e8f0">5 / 5 ACTIVE</text>
+
+      <text x="0" y="22" font-family="monospace" font-size="11" fill="#64748b">NETWORK</text>
+      <text x="174" y="22" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#38bdf8">< 38ms</text>
+
+      <text x="0" y="44" font-family="monospace" font-size="11" fill="#64748b">RADAR</text>
+      <text x="174" y="44" text-anchor="end" font-family="monospace" font-size="11" font-weight="700" fill="#10b981">SYNCED</text>
+    </g>
+  </g>
 </svg>
