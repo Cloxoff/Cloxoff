@@ -1,42 +1,39 @@
-<svg width="850" height="180" viewBox="0 0 850 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="170" viewBox="0 0 850 170" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Градиент фона -->
+    <!-- Глубокий ночной фон -->
     <linearGradient id="cyberBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#150a28" />
-      <stop offset="50%" stop-color="#0a0414" />
-      <stop offset="100%" stop-color="#05020a" />
+      <stop offset="0%" stop-color="#140827" />
+      <stop offset="50%" stop-color="#0a0314" />
+      <stop offset="100%" stop-color="#05010a" />
     </linearGradient>
 
-    <!-- Свечение для текста и элементов -->
-    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
+    <!-- Неоновое фиолетовое свечение -->
+    <radialGradient id="neonGlow" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
 
-    <!-- Кибер-сетка -->
-    <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
-      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#7e22ce" stroke-opacity="0.12" stroke-width="1" />
+    <!-- Сетка -->
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#7e22ce" stroke-opacity="0.12" stroke-width="1" />
     </pattern>
 
     <style>
-      @keyframes scanBeam {
-        0% { transform: translateY(-180px); }
-        100% { transform: translateY(180px); }
+      @keyframes scan {
+        0% { transform: translateY(-170px); }
+        100% { transform: translateY(170px); }
       }
-      @keyframes eqBar {
-        0%, 100% { height: 8px; }
-        50% { height: 38px; }
+      @keyframes glowPulse {
+        0%, 100% { filter: drop-shadow(0 0 6px rgba(192, 132, 252, 0.4)); }
+        50% { filter: drop-shadow(0 0 16px rgba(192, 132, 252, 0.9)); }
       }
-      @keyframes textFlicker {
-        0%, 100% { opacity: 1; filter: drop-shadow(0 0 12px #c084fc); }
-        50% { opacity: 0.85; filter: drop-shadow(0 0 4px #7e22ce); }
+      @keyframes eq {
+        0%, 100% { height: 10px; }
+        50% { height: 36px; }
       }
-      .scanline { animation: scanBeam 4s linear infinite; }
-      .nickname { animation: textFlicker 3s ease-in-out infinite; font-family: 'Courier New', monospace, system-ui; font-weight: 900; letter-spacing: 6px; }
-      .bar { transform-box: fill-box; transform-origin: bottom; animation: eqBar 1.2s ease-in-out infinite alternate; }
+      .scanner { animation: scan 4s linear infinite; }
+      .brand-title { animation: glowPulse 3s ease-in-out infinite; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, monospace; font-weight: 900; letter-spacing: 4px; }
+      .bar { transform-box: fill-box; transform-origin: bottom; animation: eq 1.2s ease-in-out infinite alternate; }
       .b1 { animation-delay: 0.1s; }
       .b2 { animation-delay: 0.4s; }
       .b3 { animation-delay: 0.2s; }
@@ -45,38 +42,44 @@
     </style>
   </defs>
 
-  <!-- Карточка и фон -->
-  <rect x="2" y="2" width="846" height="176" rx="16" fill="url(#cyberBg)" stroke="#3b1d60" stroke-width="1.5" />
-  <rect x="2" y="2" width="846" height="176" rx="16" fill="url(#gridPattern)" />
+  <!-- Карточка -->
+  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#cyberBg)" stroke="#3b1d60" stroke-width="1.5" />
+  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#grid)" />
+  <rect x="1.5" y="1.5" width="847" height="167" rx="20" fill="url(#neonGlow)" />
 
-  <!-- Сканирующая полоса -->
-  <line class="scanline" x1="2" y1="0" x2="848" y2="0" stroke="#c084fc" stroke-opacity="0.3" stroke-width="2" />
+  <!-- Сканирующая кибер-линия -->
+  <line class="scanner" x1="2" y1="0" x2="848" y2="0" stroke="#c084fc" stroke-opacity="0.3" stroke-width="2" />
 
-  <!-- ЛЕВАЯ ЧАСТЬ: Иконка терминала -->
-  <g transform="translate(45, 45)">
-    <rect width="90" height="90" rx="18" fill="#2e1065" fill-opacity="0.2" stroke="#7e22ce" stroke-width="1.5" />
-    <text x="45" y="58" text-anchor="middle" font-family="monospace" font-size="34" font-weight="900" fill="#c084fc">>_</text>
+  <!-- ЛЕВАЯ ЧАСТЬ: Иконка терминала iME -->
+  <g transform="translate(40, 42)">
+    <rect width="86" height="86" rx="18" fill="#2e1065" fill-opacity="0.25" stroke="#7e22ce" stroke-width="1.5" />
+    <path d="M26 32a6.5 6.5 0 0 1-1.4-12.8A9.5 9.5 0 0 1 40 17a7.5 7.5 0 0 1 6.5 10.5A5.5 5.5 0 0 1 44 32H26z" fill="none" stroke="#e9d5ff" stroke-width="2" stroke-linejoin="round" />
+    <path d="M33 32l-3 6h5l-2 6 7-8h-5l3-4h-5z" fill="#c084fc" />
+    <text x="43" y="68" text-anchor="middle" font-family="monospace" font-size="11" font-weight="700" fill="#a855f7">iME // OS</text>
   </g>
 
-  <!-- ЦЕНТР: Ник и подписи -->
-  <g transform="translate(160, 42)">
-    <text class="nickname" x="0" y="42" font-size="38" fill="#ffffff">CLOXOFF</text>
-    <text x="0" y="72" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="14" fill="#a855f7" font-weight="600" letter-spacing="2">MOBILE & SOFTWARE DEVELOPER</text>
-    <text x="0" y="94" font-family="monospace" font-size="12" fill="#64748b">SYSTEM_READY // RUNNING ON ANDROID & LINUX</text>
+  <!-- ЦЕНТР: Ник и статус -->
+  <g transform="translate(155, 46)">
+    <text class="brand-title" x="0" y="32" font-size="34" fill="#ffffff">CLOXOFF</text>
+    <text x="0" y="58" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-size="13" font-weight="600" fill="#cbd5e1">iME-Weather Developer · Mobile & Cyber UI</text>
+    <g transform="translate(0, 72)">
+      <circle cx="4" cy="5" r="3" fill="#34d399" />
+      <text x="14" y="9" font-family="monospace" font-size="11" fill="#94a3b8">github.com/Cloxoff/iME-Weather</text>
+    </g>
   </g>
 
-  <!-- СПРАВА: Анимированный аудио-эквалайзер / волна активности -->
-  <g transform="translate(710, 80)">
-    <rect class="bar b1" x="0" y="0" width="6" height="24" rx="3" fill="#c084fc" />
+  <!-- СПРАВА: Анимированная активность -->
+  <g transform="translate(720, 75)">
+    <rect class="bar b1" x="0" y="0" width="6" height="20" rx="3" fill="#c084fc" />
     <rect class="bar b2" x="14" y="0" width="6" height="34" rx="3" fill="#a855f7" />
-    <rect class="bar b3" x="28" y="0" width="6" height="18" rx="3" fill="#7e22ce" />
-    <rect class="bar b4" x="42" y="0" width="6" height="30" rx="3" fill="#c084fc" />
-    <rect class="bar b5" x="56" y="0" width="6" height="14" rx="3" fill="#a855f7" />
+    <rect class="bar b3" x="28" y="0" width="6" height="16" rx="3" fill="#7e22ce" />
+    <rect class="bar b4" x="42" y="0" width="6" height="28" rx="3" fill="#c084fc" />
+    <rect class="bar b5" x="56" y="0" width="6" height="12" rx="3" fill="#a855f7" />
   </g>
 
-  <!-- Кибер-уголки -->
-  <path d="M 12,28 L 12,12 L 28,12" fill="none" stroke="#c084fc" stroke-width="2.5" />
-  <path d="M 838,28 L 838,12 L 822,12" fill="none" stroke="#c084fc" stroke-width="2.5" />
-  <path d="M 12,152 L 12,168 L 28,168" fill="none" stroke="#c084fc" stroke-width="2.5" />
-  <path d="M 838,152 L 838,168 L 822,168" fill="none" stroke="#c084fc" stroke-width="2.5" />
+  <!-- Угловые рамки -->
+  <path d="M 14,26 L 14,14 L 26,14" fill="none" stroke="#a855f7" stroke-width="2.5" />
+  <path d="M 836,26 L 836,14 L 824,14" fill="none" stroke="#a855f7" stroke-width="2.5" />
+  <path d="M 14,144 L 14,156 L 26,156" fill="none" stroke="#a855f7" stroke-width="2.5" />
+  <path d="M 836,144 L 836,156 L 824,156" fill="none" stroke="#a855f7" stroke-width="2.5" />
 </svg>
