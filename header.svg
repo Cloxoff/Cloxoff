@@ -1,0 +1,39 @@
+<svg width="840" height="140" viewBox="0 0 840 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#170b2c" />
+      <stop offset="50%" stop-color="#0d051a" />
+      <stop offset="100%" stop-color="#06020c" />
+    </linearGradient>
+
+    <radialGradient id="headerGlow" cx="50%" cy="0%" r="70%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </radialGradient>
+
+    <pattern id="cyberGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#a855f7" stroke-opacity="0.08" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="838" height="138" rx="22" fill="url(#headerBg)" stroke="#3b1d60" stroke-width="1.5" />
+  <rect x="1" y="1" width="838" height="138" rx="22" fill="url(#cyberGrid)" />
+  <rect x="1" y="1" width="838" height="138" rx="22" fill="url(#headerGlow)" />
+
+  <!-- Декоративные уголки -->
+  <path d="M 18 32 L 18 18 L 32 18" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" />
+  <path d="M 822 32 L 822 18 L 808 18" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" />
+  <path d="M 18 108 L 18 122 L 32 122" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" />
+  <path d="M 822 108 L 822 122 L 808 122" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" />
+
+  <!-- Центральный текст -->
+  <text x="420" y="64" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="900" font-size="36" fill="#ffffff" letter-spacing="6">CLOXOFF</text>
+  
+  <text x="420" y="92" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, sans-serif" font-weight="600" font-size="12" fill="#c084fc" letter-spacing="3">MOBILE APPLICATION DEVELOPER & UI DESIGNER</text>
+
+  <!-- Нижний статус -->
+  <g transform="translate(345, 106)">
+    <circle cx="8" cy="6" r="3.5" fill="#34d399" />
+    <text x="20" y="10" font-family="monospace" font-weight="600" font-size="11" fill="#94a3b8">RESUL // TURKMENISTAN</text>
+  </g>
+</svg>
