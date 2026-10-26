@@ -1,23 +1,29 @@
 <div align="center">
 
-  <!-- ЧАСТЬ 1: НЕОНОВАЯ ШАПКА ПРОФИЛЯ -->
-  <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/main/header.svg" width="100%" alt="Cloxoff Header" />
+  <h2>⚡ CLOXOFF</h2>
+  <p><b>Mobile Application Developer • Android &amp; Material 3 UI</b></p>
 
-  <br/><br/>
+  <br/>
 
-  <!-- ЧАСТЬ 2: КАРТОЧКА ПРОЕКТА iME-WEATHER -->
+  <!-- КАРТОЧКА ПРОЕКТА iME-WEATHER -->
   <a href="https://github.com/Cloxoff/iME-Weather">
     <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/main/banner.svg" width="100%" alt="iME-Weather Banner" />
   </a>
 
   <br/><br/>
 
-  <!-- ЧАСТЬ 3: ПАНЕЛЬ ТЕХНОЛОГИЙ -->
-  <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/main/stack.svg" width="100%" alt="Tech Stack" />
+  <!-- ПАНЕЛЬ ТЕХНОЛОГИЙ -->
+  <p>
+    <img src="https://img.shields.io/badge/Android_SDK-1e1035?style=for-the-badge&logo=android&logoColor=c084fc" alt="Android" />
+    <img src="https://img.shields.io/badge/Material_3_UI-1e1035?style=for-the-badge&logo=materialdesign&logoColor=c084fc" alt="Material 3" />
+    <img src="https://img.shields.io/badge/Weather_API-1e1035?style=for-the-badge&logo=icloud&logoColor=38bdf8" alt="Weather API" />
+    <img src="https://img.shields.io/badge/Clean_Arch-1e1035?style=for-the-badge&logo=kotlin&logoColor=c084fc" alt="Clean Arch" />
+    <img src="https://img.shields.io/badge/Git_/_Linux-1e1035?style=for-the-badge&logo=linux&logoColor=38bdf8" alt="Linux" />
+  </p>
 
-  <br/><br/>
+  <br/>
 
-  <!-- ЧАСТЬ 4: АНИМИРОВАННАЯ ЗМЕЙКА АКТИВНОСТИ -->
+  <!-- АНИМИРОВАННАЯ ЗМЕЙКА АКТИВНОСТИ -->
   <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-snake-dark.svg" width="100%" alt="Contribution Snake" />
 
 </div>
