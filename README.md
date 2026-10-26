@@ -1,7 +1,5 @@
 <div align="center">
-
-# ⚡ CLOXOFF
-
-```text
-> Mobile & Software Developer // Android & Cyber UI
-> Building iME-Weather — Modern meteorological client
+  <a href="https://github.com/Cloxoff/iME-Weather">
+    <img src="https://raw.githubusercontent.com/Cloxoff/Cloxoff/main/banner.svg" alt="iME-Weather Showcase" width="100%" />
+  </a>
+</div>
