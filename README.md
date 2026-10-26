@@ -55,8 +55,7 @@
 
   <br><br>
 
-  <!-- Анимированный график коммитов -->
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Cloxoff&bg_color=0d1117&color=00e5ff&line=3b82f6&point=ffffff&area=true&hide_border=true&custom_title=Contribution%20Activity" width="95%" />
+ 
 
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Cloxoff/Cloxoff/output/github-snake-dark.svg?v=2" />
